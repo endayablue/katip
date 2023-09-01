@@ -8,19 +8,20 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="container">
-                <div class="logo">Katip</div>
-                <ul class="nav-links">
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
+    <div id="navbar">
+        <header>
+            <nav>
+                <div class="container">
+                    <div class="logo">Katip</div>
+                    <ul class="nav-links">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div>
     <section id="hero">
         <div class="container">
             <h1>Welcome to Katip</h1>
@@ -64,6 +65,14 @@
             <p>&copy; 2023 Katip. All rights reserved.</p>
         </div>
     </footer>
-
+    <script>
+        window.onscroll = function() {
+            if (window.pageYOffset > 0) {
+                document.getElementById("navbar").classList.add("sticky");
+            } else {
+                document.getElementById("navbar").classList.remove("sticky");
+            }
+        };
+    </script>
 </body>
 </html>
