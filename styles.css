@@ -60,22 +60,31 @@ header {
     margin-bottom: 20px;
 }
 
-.btn-primary {
-    background-color: #4caf50;
-    color: #fff;
+/* Button styles */
+.btn-primary,
+.btn-secondary {
+    display: inline-block;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
+    margin: 10px; /* Adjust margin for spacing */
+}
+
+.btn-primary {
+    background-color: #4caf50;
+    color: #fff;
 }
 
 .btn-secondary {
     background-color: #ffffff;
     color: #4caf50;
     border: 2px solid #4caf50;
-    padding: 10px 20px;
-    margin-left: 10px;
-    text-decoration: none;
-    border-radius: 5px;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+    background-color: #333;
+    color: #fff;
 }
 
 /* About section styles */
@@ -117,12 +126,6 @@ header {
 #contact h2 {
     font-size: 28px;
     margin-bottom: 20px;
-}
-
-.btn-primary:hover,
-.btn-secondary:hover {
-    background-color: #333;
-    color: #fff;
 }
 
 /* Footer styles */
